@@ -9,8 +9,7 @@ public class uppgift45 {
     double openPrice = .6;
 
     String[] buttons = {"Day", "Night/weekend"};
-    int time = JOptionPane.showOptionDialog(null, "Time of call: ", "Confirmation",
-        JOptionPane.DEFAULT_OPTION, 0, null, buttons, buttons[0]);
+    int time = JOptionPane.showOptionDialog(null, "Time of call: ", "Confirmation", JOptionPane.DEFAULT_OPTION, 0, null, buttons, buttons[0]);
     int callTime = Integer.parseInt(JOptionPane.showInputDialog("Call time in min:"));
 
     if(time == 0) {
