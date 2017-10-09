@@ -12,12 +12,12 @@ public class uppgift56 {
 
     String s = JOptionPane.showInputDialog("Skirv en text:");
     int i;
-    for (i=0; i<s.length(); i=i+1)
+    for (i=s.length()-1; i>=0; i=i-1)
       if (s.charAt(i) == ' ' || s.charAt(i) == '\t')
         break;
     if (i < s.length())
       JOptionPane.showMessageDialog(null,
-                  "Första vita tecken finns på plats nr " + i);
+                  "Sista vita tecken finns p\u00e5 plats nr " + i);
     else
       JOptionPane.showMessageDialog(null, "Inga vita tecken");
   }
