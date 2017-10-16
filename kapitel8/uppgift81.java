@@ -5,17 +5,17 @@ Olof Rydh
 
 import javax.swing.*;
 
-public class uppgift81 {
+public class Uppgift81 {
 
   public static void main(String[] args) {
 
     int radius = Integer.parseInt(JOptionPane.showInputDialog("Radius: "));
-    System.out.println("Circumference: " + circle.circumference(radius) + "\nArea: " + circle.area(radius));
+    System.out.println("Circumference: " + Circle.circumference(radius) + "\nArea: " + Circle.area(radius));
 
   }
 }
 
-class circle {
+class Circle {
 
   public static double circumference(int r) {
     return Math.PI * (r*2.0);
